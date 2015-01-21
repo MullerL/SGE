@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font:12px Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style-type:none;
+}
+
+ul#menu{
+    margin-left: 200px;
+}
+
+ul#menu li{
+    position:relative;
+    float:left;
+}
+
+ul#menu li a{
+    display:block;
+    float:left;
+    padding:0 15px;
+    height:30px;
+    line-height:25px;
+    background: url(./imagens/fundomenu.JPG);
+    color:#FFF;
+    text-decoration:none;      
+}
+ul#menu li a:hover{
+    background: url(./imagens/fundomenu2.JPG);
+}
+ul#menu li ul{
+    display:none;
+    position:absolute;
+    top:30px;
+    left:0;
+    z-index:99;
+}
+
+ul#menu li:hover ul,
+ul#menu li.hover ul{
+    display:block;
+}
+
+ul#menu li ul li a{
+    width:120px;
+    border-bottom:1px solid #fff;
+    clear:both;
+}
+
+ul#menu li ul li{
+    float:none;
+    clear:both;
+}
+
+ul#menu li ul li a{float:none;}
+
+#geral{
+    position:absolute;
+    width:96%;
+    height:85%;
+    margin-left:-48%;
+    left:50%;
+    top:45px;
+}     
+
+#cabecalho{
+    position: absolute;
+    background: url(./imagens/fundomenu.JPG);
+    width: 100%;
+    height: 30px;
+    top: 10px;                
+}
+
+#rodape{
+    position: absolute;
+    width: 90%;
+    height: 25px;               
+    margin-left:-45%;
+    left: 50%;
+    top: 95%;                
+}
+
+
